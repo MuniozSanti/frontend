@@ -10,8 +10,10 @@ const NosotrosPage = (props) => {
         <section className="slider">
             <h2 className="titulo1">Todo en insumos de riego y pileta.</h2>
             <h3 className="titulo2">No dudes en contactarnos para hacer tu consulta.</h3>
-            <div className="ola">
+            <div class="ola">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none">
                     <path d="M0.00,49.98 C280.19,236.36 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+                </svg>
             </div>
         </section>
     </main>

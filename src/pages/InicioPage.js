@@ -14,7 +14,7 @@ const InicioPage = (props) => {
             </section>
  
             <section className="texto2">
-                <h3>Cuidado del agua</h3>
+                <h2>Cuidado del agua</h2>
                 <p>El agua dulce es un bien muy escaso que no está disponible para todos. Aunque todos tenemos el mismo derecho, no todos disponen del agua en la forma y en las cantidades que la necesitan.</p>
             </section>
         </div>

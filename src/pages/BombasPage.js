@@ -1,98 +1,73 @@
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const BombasPage = (props) => {
-    return (
-        <div>
-        <main className="holder productos">
-            <div className="contenedor-productos">
-                <h2 className="titulo-produc">Productos</h2>
-                <nav className="nav-productos">
-                    <ul>
-                        <li><Link to="/productos">Riego</Link></li>
-                        <li><Link to="/pileta">Pileta</Link></li>
-                        <li className="activo"><Link to="/bombas">Bombas</Link></li>
-                        <li><Link to="/ablandadores">Ablandadores</Link></li>
-                        <li><Link to="/jardineria">Jardinería</Link></li>
-                    </ul>
-                </nav>
-            </div>
+  return (
+    <div>
+      <main className="holder productos">
+        <div className="contenedor-productos">
+          <h2 className="titulo-produc">Productos</h2>
+          <nav className="nav-productos">
+            <ul>
+              <li><NavLink to="/productos" className={({ isActive }) => isActive ? "activo" : undefined}>Riego</NavLink></li>
+              <li><NavLink to="/pileta" className={({ isActive }) => isActive ? "activo" : undefined}>Pileta</NavLink></li>
+              <li><NavLink to="/bombas" className={({ isActive }) => isActive ? "activo" : undefined}>Bombas</NavLink></li>
+              <li><NavLink to="/ablandadores" className={({ isActive }) => isActive ? "activo" : undefined}>Ablandadores</NavLink></li>
+              <li><NavLink to="/jardineria" className={({ isActive }) => isActive ? "activo" : undefined}>Jardineria</NavLink></li>
+            </ul>
+          </nav>
+        </div>
 
-            <div className="div-pileta">
-                <h2>Bombas disponibles</h2>
-            </div>
-        </main>
+        <div className="div-pileta">
+          <h2>Bombas disponibles</h2>
 
-        <CardGroup>
+          <CardGroup className='grupo-cartas'>
             <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                    </Card.Text>
-                </Card.Body>
+              <Card.Img variant="top" src="Imagenes/bombas elektrim/Bomba Autocenate Elektrim Kilme.jpg" alt="Bomba Autocenate Elektrim Kilme" />
+              <Card.Body>
+                <Card.Title>Bomba Autocenate Elektrim Kilme</Card.Title>
+              </Card.Body>
             </Card>
             <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This card has supporting text below as a natural lead-in to additional
-                        content.{' '}
-                    </Card.Text>
-                </Card.Body>
+              <Card.Img variant="top" src="Imagenes/bombas elektrim/Bomba Autocenate Elektrim Puelche-.jpg" alt="Bomba Autocenate Elektrim Puelche" />
+              <Card.Body>
+                <Card.Title>Bomba Autocenate Elektrim Puelche</Card.Title>
+              </Card.Body>
             </Card>
             <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
-                    </Card.Text>
-                </Card.Body>
+              <Card.Img variant="top" src="Imagenes/bombas elektrim/Bomba centrífuga Elektrim línea LE.png" alt="Bomba centrífuga Elektrim línea LE"/>
+              <Card.Body>
+                <Card.Title>Bomba centrífuga Elektrim línea LE</Card.Title>
+              </Card.Body>
             </Card>
-        </CardGroup>
+          </CardGroup>
+          <br/>
+            <CardGroup >
+              <Card>
+                <Card.Img variant="top" src="Imagenes/bombas elektrim/Bomba de flujo Elektrim E-FLOW.png" alt="Bomba de flujo Elektrim E-FLOW"/>
+                <Card.Body>
+                  <Card.Title>Bomba de flujo Elektrim E-FLOW</Card.Title>
+                </Card.Body>
+              </Card>
+              <Card>
+                <Card.Img variant="top" src="Imagenes/bombas elektrim/Bomba elevadora inteligente Elektrim_E-SMART.png" alt="Bomba elevadora inteligente Elektrim_E-SMART"/>
+                <Card.Body>
+                  <Card.Title>Bomba elevadora inteligente Elektrim_E-SMART</Card.Title>
+                </Card.Body>
+              </Card>
+              <Card>
+                <Card.Img variant="top" src="Imagenes/bombas elektrim/Bomba presurizadora Elektrim E-PRESS.png" alt="Bomba presurizadora Elektrim E-PRESS"/>
+                <Card.Body>
+                  <Card.Title>Bomba presurizadora Elektrim E-PRESS</Card.Title>
+                </Card.Body>
+              </Card>
+            </CardGroup>
+          </div>
+      </main>
 
-        <CardGroup>
-            <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                    </Card.Text>
-                </Card.Body>
-            </Card>
-            <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This card has supporting text below as a natural lead-in to additional
-                        content.{' '}
-                    </Card.Text>
-                </Card.Body>
-            </Card>
-            <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
-                    </Card.Text>
-                </Card.Body>
-            </Card>
-        </CardGroup>
     </div>
-    );
+  );
 }
 export default BombasPage;
